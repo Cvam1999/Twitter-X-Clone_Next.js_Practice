@@ -8,7 +8,9 @@ import { PiAcornDuotone } from "react-icons/pi";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import { CiCircleMore } from "react-icons/ci";
+
 import React from "react";
+import FeedCard from "@/components/FeedCard";
 
 interface TwitterSidebarButton {
   title: string;
@@ -69,10 +71,23 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <button className="bg-[#EFF3F4] text-black rounded-full p-3 w-full mt-5">POST</button>
+            <button className="bg-[#EFF3F4] text-black rounded-full p-3 w-full mt-5">
+              POST
+            </button>
           </div>
         </div>
-        <div className="col-span-6 border-r-2 border-l-2 border-slate-800"></div>
+        <div className="col-span-6 border-r-2 border-l-2 h-screen overflow-scroll no-scrollbar border-slate-800">
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+        </div>
         <div className="col-span-3"></div>
       </div>
     </div>
