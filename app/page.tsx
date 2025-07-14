@@ -8,6 +8,7 @@ import { PiAcornDuotone } from "react-icons/pi";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import { CiCircleMore } from "react-icons/ci";
+import {GoogleLogin} from "@react-oauth/google";
 
 import React from "react";
 import FeedCard from "@/components/FeedCard";
@@ -87,8 +88,13 @@ export default function Home() {
           <FeedCard />
           <FeedCard />
           <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-3">
+          {/* <GoogleLogin onSuccess={cred => console.log(cred)} /> */}
+        </div>
       </div>
     </div>
   );
